@@ -8,21 +8,21 @@ const webpack = require('webpack');
 module.exports = env => ({
     entry: {
         background: './src/background/background.ts',
-        desktop: './src/desktop/desktop.ts',
+        desktop: './src/desktop/desktop.tsx',
         in_game: './src/in_game/in_game.ts'
     },
     devtool: 'inline-source-map',
     module: {
         rules: [
             {
-                test: /\.ts?$/,
+                test: /\.tsx?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/
             }
         ]
     },
     resolve: {
-        extensions: ['.ts', '.js'],
+        extensions: ['.ts', '.js', 'tsx'],
         fallback: {
             "path": require.resolve("path-browserify"),
             "os": require.resolve("os-browserify/browser"),

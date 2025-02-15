@@ -8,8 +8,7 @@ import { AppWindow } from "../AppWindow";
 import { kHotkeys, kWindowNames, kGamesFeatures } from "../consts";
 
 import WindowState = overwolf.windows.WindowStateEx;
-import {getPlayerInfo, getPlayerMostPlayedHeroes } from "../requests/axios";
-import { getUid } from "../utils/player";
+import {getPlayerMostPlayedHeroes } from "../requests/axios";
 
 
 // The window displayed in-game while a game is running.
